@@ -1,0 +1,11 @@
+<div class="container my-5">
+    <h1> Breaking Bad </h1>
+    <hr/>
+    <input type="text" class="form-control" placeholder="Ingrese el personaje ..." (input)="filter($event)">
+
+    <div class="row">
+        <div *ngFor="let p of personajes" class="col-xl-4 col-sm-6 col-xs-12">
+            <app-personaje [personaje]="p"></app-personaje>
+        </div>
+    </div>
+</div>
